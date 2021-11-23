@@ -1,0 +1,5 @@
+/node_modules/
+package-lock.json
+/src/modules/calculator.js
+/src/modules/sendForm.js
+/src/modules/slider.js

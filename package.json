@@ -1,0 +1,24 @@
+{
+  "name": "middle_diplom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ingodwetrust03/middle_diplom.git"
+  },
+  "author": "Svetlana Biryukova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ingodwetrust03/middle_diplom/issues"
+  },
+  "homepage": "https://github.com/Ingodwetrust03/middle_diplom#readme",
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
