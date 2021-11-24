@@ -13,5 +13,7 @@ modal();
 animateHover();
 smoothScroll();
 //slider();
-//sendForm();
+//sendForm({
+//formName: ["callback-form", "application-form", "action-form"],
+//});
 //calculator();
