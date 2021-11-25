@@ -1,10 +1,10 @@
 "use strict";
 
 const timer = (limit) => {
-  const daysInput = document.querySelector(".count_1 span");
-  const hoursInput = document.querySelector(".count_2 span");
-  const minutesInput = document.querySelector(".count_3 span");
-  const secondsInput = document.querySelector(".count_4 span");
+  const daysInput = document.querySelectorAll(".count_1 span");
+  const hoursInput = document.querySelectorAll(".count_2 span");
+  const minutesInput = document.querySelectorAll(".count_3 span");
+  const secondsInput = document.querySelectorAll(".count_4 span");
 
   const getTime = () => {
     const newDateMiliSeconds = new Date().getTime();
@@ -44,19 +44,36 @@ const timer = (limit) => {
     let countedMinutes = newTime.minutes;
     let countedSeconds = newTime.seconds;
 
-    daysInput.textContent = addZero(countedDays);
-    hoursInput.textContent = addZero(countedHours);
-    minutesInput.textContent = addZero(countedMinutes);
-    secondsInput.textContent = addZero(countedSeconds);
+    daysInput.forEach((day) => {
+      day.textContent = addZero(countedDays);
+    });
+    hoursInput.forEach((hours) => {
+      hours.textContent = addZero(countedHours);
+    });
+
+    minutesInput.forEach((minutes) => {
+      minutes.textContent = addZero(countedMinutes);
+    });
+    secondsInput.forEach((secs) => {
+      secs.textContent = addZero(countedSeconds);
+    });
 
     setInterval(animateTimer, 1000);
 
     if (newTime.remainedSeconds <= 0) {
       clearInterval(animateTimer);
-      daysInput.textContent = "00";
-      hoursInput.textContent = "00";
-      minutesInput.textContent = "00";
-      secondsInput.textContent = "00";
+      daysInput.forEach((day) => {
+        day.textContent = "00";
+      });
+      hoursInput.forEach((hours) => {
+        hours.textContent = "00";
+      });
+      minutesInput.forEach((minutes) => {
+        minutes.textContent = "00";
+      });
+      secondsInput.forEach((secs) => {
+        secs.textContent = "00";
+      });
     }
   };
 

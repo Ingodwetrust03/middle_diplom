@@ -2,4 +2,3 @@
 package-lock.json
 /src/modules/slider.js
 /src/modules/calculator.js
-/src/modules/sendForm.js

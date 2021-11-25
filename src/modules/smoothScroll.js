@@ -1,7 +1,5 @@
 "use strict";
 
-import { animate } from "./helpers";
-
 const smoothScroll = () => {
   const btnUp = document.querySelector(".smooth-scroll");
   const header = document.getElementById("header");

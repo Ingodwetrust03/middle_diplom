@@ -5,15 +5,13 @@ import modal from "./modules/modal";
 import animateHover from "./modules/hoverEffectOnCertificate";
 import smoothScroll from "./modules/smoothScroll";
 //import slider from "./modules/slider";
-//import sendForm from "./modules/sendForm";
-//import calculator from "./modules/calculator";
+import sendForm from "./modules/sendForm";
+import calculator from "./modules/calculator";
 
-timer("30 november 2021");
+timer("30 december 2021");
 modal();
 animateHover();
 smoothScroll();
+sendForm();
 //slider();
-//sendForm({
-//formName: ["callback-form", "application-form", "action-form"],
-//});
-//calculator();
+calculator();
