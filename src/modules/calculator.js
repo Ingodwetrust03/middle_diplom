@@ -66,7 +66,6 @@ const calculator = () => {
   calculatorInputs.forEach((el) => {
     el.addEventListener("change", () => {
       calc();
-      sendData;
     });
   });
   console.log(total);
