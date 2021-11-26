@@ -1602,7 +1602,7 @@ input.error {
 
 .benefits__item {
   width: 100%;
-  max-width: 185px;
+  width: 185px;
 }
 
 .benefits-arrows {
@@ -1808,4 +1808,15 @@ a.sertificate-document {
 
 .error {
   border: 1px solid red;
+}
+
+.slider-items-wrap {
+  transition: all 0.3s ease-out;
+}
+
+.slider-items-wrap {
+  display: flex;
+}
+.benefits-wrap {
+  overflow-x: hidden;
 }

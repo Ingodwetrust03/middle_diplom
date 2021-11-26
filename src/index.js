@@ -4,7 +4,7 @@ import timer from "./modules/timer";
 import modal from "./modules/modal";
 import animateHover from "./modules/hoverEffectOnCertificate";
 import smoothScroll from "./modules/smoothScroll";
-//import slider from "./modules/slider";
+import slider from "./modules/slider";
 import sendForm from "./modules/sendForm";
 import calculator from "./modules/calculator";
 
@@ -13,5 +13,5 @@ modal();
 animateHover();
 smoothScroll();
 sendForm();
-//slider();
+slider();
 calculator();
